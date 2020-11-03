@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# The Next Web Clone
 
-> One paragraph statement about the project.
+> In this project, I get the chance to build a responsive website. I cloned The Next Web (*as per [The Odin Project](https://www.theodinproject.com/courses/html-and-css/lessons/building-with-responsive-design)*), a tech-focused magazine which uses media queries to gracefully degrade their site as the window size is reduced. The process builds on the skills utilized in the previous projects done from [The Odin Project curriculum](https://www.theodinproject.com/home).
 
 ![screenshot](./images/app_screenshot.png)
 
@@ -17,12 +17,7 @@ Additional description about the project and its features.
 
 **UPDATE ME** [Live Demo Link](https://antonyotero.github.io/ *repo name* /) **UPDATE ME**
 
-
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
@@ -41,23 +36,7 @@ git clone https://github.com/elberthcorniell/Youtube-Clone.git
 
 3- Everything should be running by now. 👍
 
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+## Author
 
 👤 **Antony Otero**
 
@@ -69,7 +48,7 @@ git clone https://github.com/elberthcorniell/Youtube-Clone.git
 
 Contributions, issues, and feature requests are welcome!
 
-**UPDATE ME** Feel free to check the [issues page ](https://github.com/AntonyOtero/ *repo name* /issues). **UPDATE ME**
+Feel free to check the [issues page ](https://github.com/AntonyOtero/responsive-design/issues).
 
 ## Show your support
 
@@ -77,6 +56,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- [@TheOdinProject](https://github.com/TheOdinProject)
 - [@microverseinc](https://github.com/microverseinc)
 
 ## 📝 License
