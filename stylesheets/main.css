@@ -1,4 +1,4 @@
-/* DEBUG */
+/* UTILITIES */
 
 .trace {
   border: 1px solid #a30000;
@@ -8,12 +8,15 @@
   display: none;
 }
 
-/* END OF DEBUG */
-
-/* UTILITIES */
-
 .clearfix {
   overflow: hidden;
+}
+
+.grid {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+  grid-template-columns: repeat(auto-fill, minmax(min(247px, 100%), 1fr));
+  grid-gap: 24px;
 }
 
 /* END OF UTILITIES */
@@ -113,9 +116,8 @@ section header {
 }
 
 .card-alt {
-  width: calc(294px - 24px);
+  width: 100%;
   height: calc(271px - 24px);
-  margin: 12px 24px 12px 0;
   float: left;
   background-color: black;
 }
