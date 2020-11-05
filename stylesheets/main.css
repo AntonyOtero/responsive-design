@@ -56,43 +56,43 @@ body {
   padding: 4px;
 }
 
-.cover .container {
+/* .cover .container {
   padding: 4px;
-}
+} */
 
-.cover .container:first-child {
+/* .cover .container:first-child {
   max-width: 1257px;
   min-width: 499px;
   flex: 2;
   background-color: blue;
-}
+} */
 
-.cover .container:last-child {
+/* .cover .container:last-child {
   max-width: 624px;
   min-width: 245px;
   flex: 1;
   background-color: red;
-}
+} */
 
 .card {
   background-color: #000;
 }
 
 .cover .card {
-  width: 100%;
   height: 268px;
   flex: 1;
+  background-color: blue;
 }
 
-.cover .container:first-child .card {
-  width: 100%;
+.cover .card:first-child {
   height: 544px;
   flex: 2;
+  background-color: rebeccapurple;
 }
 
-.cover .container:last-child .card:first-child {
+/* .cover .container:last-child .card:first-child {
   margin: 0 0 8px;
-}
+} */
 
 main {
   max-width: 1152px;
