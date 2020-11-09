@@ -5,8 +5,9 @@
 body {
   font-family: sans-serif;
   font-size: 14px;
-  background-color: palevioletred;
 }
+
+/* NAVBAR */
 
 .main-nav {
   width: 100%;
@@ -19,7 +20,9 @@ body {
 }
 
 .main-nav {
+  top: 0;
   overflow: hidden;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
 }
 
 .main-nav .logo {
@@ -96,4 +99,81 @@ body {
   .nav-links li:nth-child(1n+6) {
     display: block;
   }
+}
+
+/* COVER */
+
+.cover {
+  padding: 4px;
+  margin-top: 72px;
+}
+
+.cover-story {
+  min-width: 304px;
+  height: 268px;
+  padding: 4px;
+}
+
+.cover-story-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: 50%;
+}
+
+#first-story .cover-story-image {
+  background-image: linear-gradient( rgba(0,0,0,0.25) 0%, rgba(0,0,0,1) 100%), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/header-image-samsung-number-one-phone-maker-america-apple-796x417.png");
+}
+
+#second-story .cover-story-image {
+  background-image: linear-gradient( rgba(0,0,0,0.25) 0%, rgba(0,0,0,1) 100%), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/global-boardroom.jpg");
+}
+
+#third-story .cover-story-image {
+  background-image: linear-gradient( rgba(0,0,0,0.25) 0%, rgba(0,0,0,1) 100%), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Untitled-design-15-796x417.jpg");
+}
+
+.cover-story a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cover-story header {
+  position: absolute;
+  bottom: 0;
+  padding: 14px 12px;
+  color: #fff;
+}
+
+.cover-story-topic {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.cover-story-title {
+  margin: 5px 0;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.cover-story-info {
+  height: 16px;
+  display: flex;
+  color: #ffffff99;
+}
+
+.cover-story-info p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.cover-story-info div {
+  display: flex;
+  align-items: center;
+}
+
+.cover-story-info div i {
+  margin: 0 6px 0 10px;
+  font-size: 16px;
 }
