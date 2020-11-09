@@ -3,6 +3,8 @@
 }
 
 body {
+  font-family: sans-serif;
+  font-size: 14px;
   background-color: palevioletred;
 }
 
@@ -12,11 +14,16 @@ body {
   display: flex;
   position: fixed;
   justify-content: space-between;
-  color: #bebebe;
+  color: #aaa;
   background-color: #fff;
 }
 
+.main-nav {
+  overflow: hidden;
+}
+
 .main-nav .logo {
+  float: left;
   background-color: #000;
 }
 
@@ -26,8 +33,37 @@ body {
   padding: 16px 20px;
 }
 
-.nav-icons{
+.nav-links {
+  display: none;
+  float: left;
+  padding: 0;
   margin: 0;
+  list-style: none;
+}
+
+.nav-links li {
+  float: left;
+  padding: 18px 10px 0;
+}
+
+.nav-links li:first-child {
+  padding: 18px 10px 0 20px;
+}
+
+.nav-links li:nth-child(1n+6) {
+  display: none;
+}
+
+.nav-links a {
+  color: #aaa;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-icons{
+  padding: 0;
+  margin: 0;
+  display: flex;
   list-style: none;
 }
 
@@ -35,8 +71,7 @@ body {
   width: 16px;
   height: 16px;
   padding: 16px;
-  float: left;
-  border-left: 1px solid #d6d6d6;
+  border-left: 1.5px solid #eee;
 }
 
 .main-nav .nav-icons a {
@@ -45,4 +80,20 @@ body {
 
 .nav-icons .menu i {
   color: #ff4422
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    display: block;
+  }
+
+  .nav-icons .menu {
+    display: none;
+  }
+}
+
+@media (min-width: 1214px) {
+  .nav-links li:nth-child(1n+6) {
+    display: block;
+  }
 }
