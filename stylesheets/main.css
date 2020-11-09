@@ -120,7 +120,7 @@ body {
   .nav-wrapper {
     width: 100%;
   }
-  
+
   .main-nav .secondary-nav-links {
     display: flex;
   }
@@ -133,11 +133,30 @@ body {
   }
 }
 
-@media (min-width: 1214px) {
+@media (min-width: 1024px) {
+  .nav-logo {
+    display: none;
+  }
+
   .nav-links li:nth-child(1n+6) {
     display: block;
   }
-} 
+
+  .cover-logo {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cover-logo img {
+    width: 339px;
+    height: 112px;
+  }
+
+  .cover-logo .date {
+    color: #fff;
+  }
+}
 
 /* COVER */
 
@@ -177,6 +196,10 @@ body {
 .cover-story a {
   text-decoration: none;
   color: inherit;
+}
+
+.cover-logo {
+  display: none;
 }
 
 .cover-story header {
@@ -241,5 +264,33 @@ body {
 
   .cover .divider .cover-story {
     height: calc(50% - 8px);
+  }
+}
+
+@media (min-width: 922px) {
+  .cover {
+    height: 537px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cover-logo {
+    display: flex;
+  }
+
+  #first-story .cover-story-image {
+    background-image: linear-gradient(165deg, rgba(246,0,29,0.9) 0%, rgba(255,255,255,0) 40%), linear-gradient( rgba(0,0,0,0.25) 0%, rgba(0,0,0,1) 100%), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/header-image-samsung-number-one-phone-maker-america-apple-796x417.png");
+  }
+
+  #first-story .cover-story-title{
+    font-size: 56px;
+    line-height: 56px;
+    margin-bottom: 14px;
+  }
+
+  #second-story .cover-story-title,
+  #third-story .cover-story-title {
+    font-size: 28px;
+    line-height: 28px;
   }
 }
