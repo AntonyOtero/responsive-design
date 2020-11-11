@@ -83,7 +83,7 @@ ul {
   text-transform: uppercase;
 }
 
-.nav-links {
+.nav-links li {
   display: none;
 }
 
@@ -126,8 +126,8 @@ ul {
   .main-nav .secondary-nav-links {
     display: flex;
   }
-  .nav-links {
-    display: flex;
+  .nav-links li {
+    display: block;
   }
 
   .nav-icons .menu {
