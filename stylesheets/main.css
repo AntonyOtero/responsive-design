@@ -364,6 +364,7 @@ article .context h3 {
   margin: 0;
   font-size: 14px;
   line-height: 18px;
+  letter-spacing: -0.42px;
 }
 
 article .context p {
@@ -375,9 +376,6 @@ article .context p {
 }
 
 @media (min-width: 762px) {
-  main {
-    align-content: flex-end;
-  }
 
   article {
     min-height: 149px;
@@ -395,6 +393,45 @@ article .context p {
   article .context {
     padding: 13px 0 0 0;
   }
+}
+
+/*//////////////////////
+//// MAIN - FUNDING ////
+//////////////////////*/
+
+.funding article {
+  flex-direction: column;
+  background-color: #FFFAF8;
+}
+
+.funding header {
+  position: relative;
+}
+
+.funding img {
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  width: 60px;
+  height: 60px;
+}
+
+.funding h4 {
+  padding: 11px 16px 11px 84px;
+  margin: 0;
+}
+
+.funding header > h4 {
+  color: #fff;
+  background-color: #F24423;
+}
+
+.funding header div>h4 {
+  margin: 0;
+}
+
+.funding header div:last-child {
+  background-color: #FDEBE7;
 }
 
 /*//////////////////////
