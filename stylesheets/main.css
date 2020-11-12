@@ -333,28 +333,34 @@ main section i {
 
 article {
   width: calc(100% - 16px);
-  height: 75px;
+  height: auto;
   padding: 8px;
+  display: flex;
   position: relative;
 }
 
-article > div {
+/* article > div {
   width: 100%;
   display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
 article .image {
-  width: 193px;
+  width: 100%;
+  max-width: 75px;
   height: 75px;
   background-size: cover;
   background-position: center;
 }
 
-article h3 {
+article .context {
+  padding: 0 0 0 13px;
+}
+
+article .context h3 {
   margin: 0;
   font-size: 14px;
   line-height: 18px;
@@ -365,6 +371,30 @@ article .context p {
   margin-bottom: 1px;
   font-size: 12px;
   line-height: 18px;
+  color: rgb(170, 170, 170);
+}
+
+@media (min-width: 762px) {
+  main {
+    align-content: flex-end;
+  }
+
+  article {
+    min-height: 149px;
+    max-height: 334px;
+    flex-direction: column;
+    align-content: flex-start;
+  }
+
+  article .image {
+    max-width: 312px;
+    min-height: 114px;
+    max-height: 155px;
+  }
+
+  article .context {
+    padding: 13px 0 0 0;
+  }
 }
 
 /*//////////////////////
