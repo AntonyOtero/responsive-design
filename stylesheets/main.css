@@ -315,7 +315,7 @@ main {
 
 section {
   max-width: 1152px;
-  margin: 0 auto;
+  margin: 0 auto 28px;
 }
 
 main section > div {
@@ -382,8 +382,11 @@ main section i {
 
   .grid {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
     justify-content: center;
+  }
+
+  .latest-news .grid {
+    grid-template-rows: repeat(3, auto);
   }
 
   .card {
@@ -403,8 +406,11 @@ main section i {
 
 @media (min-width: 1024px) {
   .grid {
-    grid-template-rows: repeat(auto-fill, minmax(220px, 260px));
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .latest-news .grid {
+    grid-template-rows: repeat(auto-fill, minmax(220px, 260px));
   }
 
   .card-context {
@@ -426,39 +432,127 @@ main section i {
 //// MAIN - FUNDING ////
 //////////////////////*/
 
-.funding article {
-  flex-direction: column;
-  background-color: #FFFAF8;
-}
-
 .funding header {
-  position: relative;
+  margin-bottom: 24px;
 }
 
-.funding img {
-  position: absolute;
-  top: 11px;
-  left: 11px;
+.funding header li {
+  margin-top: 11px;
+}
+
+.funding li {
+  color: #ff4422;
+}
+
+.funding header span {
+  margin: 0 10px;
+  display: none;
+}
+
+.funding-card {
+  margin: 0 8px;
+  background-color: #ff442205;
+}
+
+.funding-card:nth-child(4) {
+  display: none;
+}
+
+.funding-card header {
+  background-color: #ff442214;
+}
+
+.funding-card h4 {
+  font-size: 18px;
+  line-height: 22.5px;
+}
+
+.funding-card img {
   width: 60px;
   height: 60px;
+  margin: 11px;
+  float: left;
 }
 
-.funding h4 {
+.funding-card h4.brand {
   padding: 11px 16px 11px 84px;
   margin: 0;
-}
-
-.funding header > h4 {
   color: #fff;
-  background-color: #F24423;
+  background-color: #ff4422;
 }
 
-.funding header div>h4 {
+.funding-card header div {
+  padding: 11px 16px 11px 84px;
+}
+
+.funding-card div h4 {
   margin: 0;
 }
 
-.funding header div:last-child {
-  background-color: #FDEBE7;
+.funding-card div h5 {
+  margin: 0;
+  font-size: 11px;
+  text-transform: uppercase;
+  opacity: 50%;
+}
+
+.funding-card .body {
+  padding: 16px;
+  color: #555;
+}
+
+.funding-card i {
+  margin-right: 8px;
+  color: #000;
+}
+
+.funding-card p {
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.funding-card footer {
+  padding: 10px 16px 16px;
+  border-top: 1px solid #ff442250;
+  color: #555;
+}
+
+.funding-card footer p {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.funding-card footer a {
+  color: #aaa;
+}
+
+@media (min-width: 768px) {
+  .funding header h2 {
+    margin-bottom: 0;
+  }
+
+  .funding header ul {
+    display: flex;
+  }
+
+  .funding header span {
+    display: inline;
+  }
+}
+
+@media (min-width: 1024px) {
+  .funding .section-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .funding .section-header ul {
+    margin-top: 21px
+  }
+
+  .funding-card:nth-child(4) {
+    display: block;
+  }
 }
 
 /*//////////////////////
