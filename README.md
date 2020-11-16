@@ -12,10 +12,14 @@ Additional description about the project and its features.
 
 - HTML5
 - CSS3
+  - Grid
+  - Flexbox
+  - Floats
+  - Media Queries
 
 ## Live Demo
 
-**UPDATE ME** [Live Demo Link](https://antonyotero.github.io/ *repo name* /) **UPDATE ME**
+[Live Demo Link](https://antonyotero.github.io/responsive-design/)
 
 ## Getting Started
 
@@ -30,7 +34,7 @@ To get a local copy up and running follow these simple example steps.
 
 1- Clone the repository
 ```
-git clone https://github.com/elberthcorniell/Youtube-Clone.git
+git clone https://github.com/antonyotero/responsive-design.git
 ```
 2- Open the cloned repo directory in VS Code, right click the index.html file and click on "Open With Live Server"
 
