@@ -705,6 +705,72 @@ main section i {
 }
 
 /*//////////////////////
+// MAIN - LATEST DEALS /
+//////////////////////*/
+
+.latest-deals header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f42;
+}
+
+.deal-listing {
+  padding: 8px 0;
+}
+
+.listing-image {
+  width: 75px;
+  height: 75px;
+  margin: 0 0 8px;
+  float: left;
+  background-size: cover;
+  background-position: center;
+}
+
+.listing-header {
+  padding: 0 0 0 88px;
+}
+
+.listing-header h4 {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.listing-header p {
+  margin: 0;
+  padding: 4px 0 0 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(85, 85, 85);
+}
+
+.listing-header .strike {
+  margin: 0 4px 0 0;
+  font-size: 12px;
+  color: rgb(170, 170, 170);
+  text-decoration: line-through;
+}
+
+@media (min-width: 768px) {
+  .deal-listing {
+    padding: 10px;
+    width: 249px;
+  }
+
+  .listing-image {
+    width: 100%;
+    height: 171px;
+    float: none;
+  }
+
+  .listing-header {
+    padding: 0;
+  }
+}
+
+/*//////////////////////
 //////// FOOTER ////////
 //////////////////////*/
 
